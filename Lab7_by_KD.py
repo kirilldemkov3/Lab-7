@@ -5,7 +5,7 @@ def get_weather(city_name, api_key):
     """
     Показывает погоду, влажность и давление в указанном городе
     """
-    url = "https://api.openweathermap.org/data/2.5/weather"
+    URL = "https://api.openweathermap.org/data/2.5/weather"
     
     params = {
         'q': city_name,
@@ -50,8 +50,9 @@ def get_weather(city_name, api_key):
         print(f"Ошибка: {e}")
 
 
-API_KEY = "75a16bc8a78bc52b91da5973bc6360a3"
-CITY = "Rome"
+API_KEY = "набор цифр и букв"
+CITY = "Bryansk"
+
 
 
 get_weather(CITY, API_KEY)
