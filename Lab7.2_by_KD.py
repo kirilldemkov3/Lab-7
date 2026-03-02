@@ -4,7 +4,7 @@ def get_holidays(api_key, country, year):
     """
     Получает и выводит праздники для указанной страны
     """
-    url = "https://holidayapi.com/v1/holidays"
+    URL = "https://holidayapi.com/v1/holidays"
     
     params = {
         'key': api_key,
@@ -13,7 +13,7 @@ def get_holidays(api_key, country, year):
     }
     
     try:
-        response = requests.get(url, params=params, timeout=30)
+        response = requests.get(URL, params=params, timeout=30)
         data = response.json()
         
         if 'error' in data:
@@ -52,3 +52,4 @@ YEAR = 2025
 # Запуск
 
 get_holidays(API_KEY, COUNTRY, YEAR)
+
