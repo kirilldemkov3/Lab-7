@@ -45,9 +45,10 @@ def get_holidays(api_key, country, year):
         print(f"Ошибка соединения: {e}")
 
 # Входные данные
-API_KEY = "645a79f7-1d35-494b-a0eb-0c1bf439018e"  
+API_KEY = "ключик апи"  
 COUNTRY = "RU"  
 YEAR = 2025     
 
 # Запуск
+
 get_holidays(API_KEY, COUNTRY, YEAR)
